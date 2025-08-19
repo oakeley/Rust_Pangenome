@@ -1,0 +1,10 @@
+[package]
+name = "cli"
+version = "0.5.0"
+edition = "2021"
+[dependencies]
+anyhow = { workspace = true }
+clap = { workspace = true, features=["derive"] }
+rayon = { workspace = true }
+indicatif = { workspace = true }
+core = { path = "../core" }
