@@ -11,6 +11,9 @@ pub mod graph;
 pub mod enhanced_annotations; // The enhanced annotation system
 pub mod visualization; // The visualization system
 
-pub use align::{AlignHit, align_reads_with_cigar_splice, align_reads_enhanced, EnhancedAlignHit};
-pub use enhanced_annotations::{EnhancedAnnotationStore, EnhancedAnnotationTag, FeatureType, KaryotypeInfo};
+pub use hilbert::HilbertMapper;
+pub use enhanced_annotations::{EnhancedAnnotationStore, EnhancedAnnotationTag, FeatureType};
 pub use visualization::{MultiScaleVisualizer, VisualizationLayer, LayerType};
+pub use index::HierarchicalIndex;
+pub use align::{align_reads_enhanced, EnhancedAlignHit, AlignmentType};
+pub use io::load_index_hdf5;
