@@ -1,0 +1,12 @@
+[package]
+name = "fractal_pangenome_indexer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { workspace = true }
+clap = { workspace = true }
+indicatif = { workspace = true }
+rayon = { workspace = true }
+needletail = { workspace = true }
+fractal_pangenome_core = { path = "../core" }
